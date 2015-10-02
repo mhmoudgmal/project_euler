@@ -26,6 +26,7 @@ prob_dir_structure()
   
   `mkdir "$dir_name/lib"`
   `touch "$dir_name/.description"`
+  git checkout -b "${dir_name}"
 }
 
 
