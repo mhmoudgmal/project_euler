@@ -1,0 +1,16 @@
+This is the lazy version of fibonacci sequence,
+but it becomes very slow considering large number like the problem's one (4000000)
+
+
+Enumerator.new do |yielder|
+  a, b = 1, 1
+
+  loop do
+    yielder.yield a
+
+    a, b = (a + b), a
+  end
+end
+
+
+take(4000000) # It takes long time, so don't be too lazy, it's not always good
