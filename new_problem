@@ -16,16 +16,16 @@ else
   dir_name=$prob_param
 fi
 
-`mkdir $dir_name`
+mkdir $dir_name
 
 
 
 prob_dir_structure()
 {
   echo $dir_name
-  
-  `mkdir "$dir_name/lib"`
-  `touch "$dir_name/.description"`
+
+  mkdir "$dir_name/lib"
+  touch "$dir_name/.description"
   git checkout -b "${dir_name}"
 }
 
